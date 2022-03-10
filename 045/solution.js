@@ -1,3 +1,9 @@
+// Simple brute-force solution which tries incrementing each of the kinds of
+// numbers until a solution is found. Since triangle numbers grow slower than
+// pentagonal numbers and pentagonal numbers grow slower than hexagonal numbers,
+// it tries incrementing the triangle number then the pentagonal number then
+// the hexagonal number.
+
 function getTriangle(n) {
     return n * (n + 1) / 2;
 }
